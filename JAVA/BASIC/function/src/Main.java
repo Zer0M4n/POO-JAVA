@@ -28,7 +28,7 @@ public class Main {
                     Materia3 = sc.nextFloat();
 
                     Main funciones = new Main();
-                    funciones.Calcular_promedio(Materia1,Materia2,Materia3);
+
                     funciones.Desplegar(Materia1,Materia2,Materia3);
                     break;
                 case "B":
