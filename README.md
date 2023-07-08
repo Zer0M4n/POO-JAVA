@@ -97,3 +97,88 @@ public class Main {
 ```
 
 ## Métodos de clase
+**Que es un método?** Los métodos son funciones que ejecutan códigos , sirven para separar apartados del programa y se efectúan con el objetos
+
+**Ejemplo**
+```java
+public class Main {
+  static void myMethod() {
+    System.out.println("Hello World!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+
+// Outputs "Hello World!"
+```
+
+## Tipos de modificadores de acceso?
+
+ - **Modificador de acceso prívate:** Este modificador es el mas restrictivo , la unica manera de acceder a los datos es mediante con la clase asociada
+ - **El modificador por defecto (default):** Cuando no declaramos un modificador de acceso , java asigna el modificador default, este modificador permite  accesar los datos de la propia clase, como las clases del mismo paquete
+ - **Modificador de acceso protected:** Los datos se acceden con la misma clase, clases del mismo paquete y clases heredados
+ - **Modificador public:** Este es el modificador con mas libertad , podemos acceder  los datos donde sea 
+ -<table>
+    <tbody><tr>
+        <td>Mo<wbr>di<wbr>fi<wbr>ca<wbr>dor</td>
+        <td>La misma cla<wbr>se</td>
+        <td>Mismo pa<wbr>que<wbr>te</td>
+        <td>Sub<wbr>clase</td>
+        <td>Otro pa<wbr>que<wbr>te</td>
+    </tr>
+    <tr>
+        <td>pri<wbr>vate</td>
+        <td>Sí</td>
+        <td>No</td>
+        <td>No</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>de<wbr>fault</td>
+        <td>Sí</td>
+        <td>Sí</td>
+        <td>No</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>pro<wbr>tec<wbr>ted</td>
+        <td>Sí</td>
+        <td>Sí</td>
+        <td>Sí/No</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>pu<wbr>blic</td>
+        <td>Sí</td>
+        <td>Sí</td>
+        <td>Sí</td>
+        <td>Sí</td>
+    </tr>
+</tbody></table>
+
+## Constructores 
+**Que es un constructor?** Un constructor  sirve para inicializar el objeto y establecer sus propiedades y valores predeterminados.
+
+**Sintaxis**
+
+```java
+// Create a Main class
+public class Main {
+  int x;  // Create a class attribute
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;  // Set the initial value for the class attribute x
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(); // Create an object of class Main (This will call the constructor)
+    System.out.println(myObj.x); // Print the value of x
+  }
+}
+
+// Outputs 5
+```
+## Herencia y Polimorfismo
