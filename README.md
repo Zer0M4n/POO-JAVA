@@ -114,6 +114,13 @@ public class Main {
 // Outputs "Hello World!"
 ```
 
+
+# *Metodos Getter y Setter*
+Loa métodos ***Getter*** y ***Setter*** Son métodos que permiten el acceso a los atributos de una clase , que están encapsulados de manera privada
+**Metodo Getter**
+El metodo get("Obtener"): accede a la clase para retornarnos  el valor por lo cual la estructura de este metodo debe contener el tipo de valor que vamos a retornar el con ese metodo
+**Metodo Setter**
+El metodo set("Establecer") nos sirve para asignar un valor a un atributo de nuestra la clase , esto se hace de manera directa con este metodo, como este metodo no retorna nada debe contener la palabra void en su estructura y siempre debe recibir un parametro de entrada
 ## Tipos de modificadores de acceso?
 
  - **Modificador de acceso prívate:** Este modificador es el mas restrictivo , la unica manera de acceder a los datos es mediante con la clase asociada
@@ -182,3 +189,37 @@ public class Main {
 // Outputs 5
 ```
 ## Herencia y Polimorfismo
+**Que es la herencia en POO?** La herencia en poo es cuando "hederemos" Características de una clase a otra, de esta forma nos permite reutilizar atributos y métodos para otras clases
+
+ - **Clase Base:** La clase base es la que hereda sus atributos y metodos
+ - **Clase Derivada:** Esta es la clase que recibe métodos y atributos
+ 
+Para poder hederar clases tenemos que usar la palabra **extends**
+
+**Sintaxis de la herencia**
+
+```java
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}
+```
+
+**Que es el polimorfismo en POO?**
