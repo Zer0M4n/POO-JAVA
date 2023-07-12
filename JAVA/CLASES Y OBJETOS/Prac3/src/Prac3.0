@@ -1,0 +1,13 @@
+Se hara una baraja de cartas espa;las
+
+Una carta tiene un numero entre el 1 y 12(los nuemros 8 y 9 nose se incluyen)
+
+La barjas estaran Compuestas por un cojunto de cartas , 40 exactamente
+
+Las operaciones quw podra realizar las cartas son
+-Barajar: cambia de posicion todas las cartas aleatoriamente
+-Siguiente Carta:Devuelve la suiguiente carta que esta en la baraja
+-Cartas Disponibles: Indica el numero de cartas que se pueden repartir
+-Dart Cartas: dado a un numero de cartas que nos pidan , le devolb=vemos ese numero
+-Cartas monton: Mostramos aquellas cartas que han salido
+-Mostrar baraja: :
