@@ -1,0 +1,39 @@
+Elaborar el programa en C# con las siguientes especificaciones:
+* nombre clase base - Areas
+* campo clase base - radio
+* constructor clase base - recibe parámetro y lo asigna al campo de la clase.
+* método virtual clase base - CalcularArea( ){ return 0; }
+* método virtual clase base - ImprimeArea( ){ //vacío }
+* destructor clase base - Mensaje "Memoria Liberada Objeto Base Areas"
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 1 - Círculo
+* constructor clase d1 - solo hereda el campo de la clase base.
+* método override clase d1 - CalcularArea( ){ return Math.PI * Math.Pow(radio,2) ; }
+* método override clase d1 - ImprimeArea( ){ //despliega radio y el valor que recibe de área del círculo }
+* destructor clase d1 - Mensaje "Memoria Liberada Objeto Derivada Círculo"
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 2 - Esfera
+* constructor clase d2 - solo hereda el campo de la clase base.
+* método override clase d2 - CalcularArea( ){ return 4 * Math.PI * Math.Pow(radio,2) ; }
+* método override clase d2 - ImprimeArea( ){ //despliega radio y el valor que recibe de área de la esfera }
+* destructor clase d2 - Mensaje "Memoria Liberada Objeto Derivada Esfera"
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 3 - Cilindro
+* campo adicional clase d3 - altura
+* constructor clase d3 - hereda el campo de la clase base y recibe parámetro para su campo.
+* método override clase d3 - CalcularArea( ){ return 2 * Math.PI * radio * ( altura + radio) ; }
+* método override clase d3- ImprimeArea( ){ //despliega radio, altura y el valor que recibe de área del cilindro }
+* destructor clase d3- Mensaje "Memoria Liberada Objeto Derivada Cilindro"
+----------------------------------------------------------------------------------------------------------------------------------------
+En el Main( ):
+- Declarar y capturar variable auxiliar para radio.
+- Crear objeto de la clase base enviándole el parámetro.
+- Crear objeto de la clase derivada Círculo heredando el campo radio de la clase base.
+- Ejecutar métodos CalcularArea( ) e ImprimeArea( ) de clase Círculo.
+* detener y limpiar pantalla.
+- Crear objeto de la clase derivada Esfera heredando el campo radio de la clase base.
+- Ejecutar métodos CalcularArea( ) e ImprimeArea( ) de clase Esfera.
+* detener y limpiar pantalla.
+- Declarar y capturar variable auxiliar para altura.
+- Crear objeto de la clase derivada Cilindro heredando campo radio y enviándole parámetro para altura.
+- Ejecutar métodos CalcularArea( ) e ImprimeArea( ) de clase Cilindro.
