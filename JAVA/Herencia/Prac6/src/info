@@ -1,0 +1,32 @@
+Elaborar el Programa en C# con las siguientes características:
+* nombre clase base - Escuela
+* campos clase base - nombreEscuela, dirección, teléfono.
+* constructor clase base - recibe parámetros y los asigna a los campos de la clase.
+* método clase base - desplegarEscuela( ){ //despliega 3 campos de la clase }
+* destructor clase base - mensaje "Memoria Liberada Objeto Escuela " + this.nombreEscuela
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 1 - Alumno
+* campos clase d1 - nombreAlumno, numeroControl, carrera, semestre.
+* constructor clase d1 - recibe parámetros los asigna a sus campos y hereda campos de la clase base.
+* método clase d1 - desplegarAlumno( ){ //despliega 4 campos de la derivada y los 3 heredados }
+* destructor clase d1 - mensaje "Memoria Liberada Objeto Alumno " + this.nombreAlumno
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 2 - Maestro
+* campos clase d2 - nombreMaestro, numeroFiliacion, profesión, departamento.
+* constructor clase d2 - recibe parámetros los asigna a sus campos y hereda campos de la clase base.
+* método clase d2 - desplegarMaestro( ){ //despliega 4 campos de la derivada y los 3 heredados }
+* destructor clase d2 - mensaje "Memoria Liberada Objeto Maestro " + this.nombreMaestro
+----------------------------------------------------------------------------------------------------------------------------------------
+En el Main( ):
+- Declarar y capturar variables auxiliares para escuela (3).
+- Crear objeto de la clase base enviándole sus parámetros.
+- Ejecutar método desplegarEscuela( ) de clase base escuela.
+* detener y limpiar pantalla.
+- Declarar y capturar variables auxiliares para alumno (4).
+- Crear objeto de la clase derivada1 enviándole sus parámetros y heredando campos de la clase base.
+- Ejecutar método desplegarAlumno( ) de clase derivada Alumno.
+* detener y limpiar pantalla.
+- Declarar y capturar variables auxiliares para maestro (4).
+- Crear objeto de la clase derivada2 enviándole sus parámetros y heredando campos de la clase base.
+- Ejecutar método desplegarMaestro( ) de clase derivada Maestro.
+----------------------------------------------------------------------------------------------------------------------------------------
