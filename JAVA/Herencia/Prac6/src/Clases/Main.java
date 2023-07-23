@@ -8,7 +8,7 @@ public class Main {
         String Nombre_Alumno, Carrera, Nombre_Escuela,Direccion,Telefono;
         String Nombre_Maesstro, Departamento, Profecion;
         int Numero_Control;
-        int ID ;
+        int ID = 0 ;
         byte Semestre;
         Scanner Entrada = new Scanner(System.in);//Objeto de Para variables
 
@@ -20,6 +20,7 @@ public class Main {
         System.out.println("Telefono");
         Telefono = Entrada.next();
         Escuela school = new Escuela(Nombre_Escuela,Direccion,Telefono);
+
         //Datos del maestro
         System.out.println("Datos del Maestro");
         System.out.println("Nombre del maestro");
@@ -28,11 +29,14 @@ public class Main {
         Departamento = Entrada.next();
         System.out.println("Profesion");
         Profecion = Entrada.next();
-        System.out.println(Nombre_Escuela);
+        System.out.println("ID");
         ID = Entrada.nextInt();
 
         //Constructor de la clase Maestro
-        Maestro Master = new Maestro(Nombre_Maesstro,Departamento,Profecion,ID);
+        Maestro Master = new Maestro(Nombre_Escuela,Telefono,Direccion,Nombre_Maesstro,Departamento,Profecion,ID);
         //Datos del alumno
+
+        school.Desplegar_Escuela();
+        Master.Desplegar_Maestro();
     }
 }

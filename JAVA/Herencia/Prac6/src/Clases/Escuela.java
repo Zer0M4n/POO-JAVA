@@ -10,10 +10,11 @@ public class Escuela {
         this.Nombre_Escuela = Nombre_Escuela;
     }
 
+
+
     //Constructor de la escuela
     //METODOS DE LA CLASE
-    static void Desplegar_Escuela(){
-
+    protected void Desplegar_Escuela(){
+        System.out.println(Nombre_Escuela + " " + Direccion +" " + Telefono);
     }
-
 }

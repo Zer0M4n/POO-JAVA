@@ -5,7 +5,8 @@ public class Maestro extends Escuela{
     private String Nombre_Maesstro, Departamento, Profecion;
     private int ID ;
     //Constructor de la clase
-    public Maestro(String Nombre_Maesstro,String Departamento,String Profecion,int ID){
+    public Maestro(String Nombre_Escuela,String Direccion, String Telefono,String Nombre_Maesstro,String Departamento,String Profecion,int ID)  {
+        super(Nombre_Escuela,Direccion,Telefono);
         this.Departamento = Departamento;
         this.ID = ID;
         this.Profecion = Profecion;
