@@ -256,3 +256,30 @@ class Main {
   }
 }
 ```
+
+## Excepciones
+
+**Que son las exepciones en java?** Las exepciones son formas que java nos da para controlar errores, son muy utiles para errores previstos y imprevistos
+
+**Tipos de exepciones en java:** 
+-   **Excepciones irrecuperables:** Hijas de  **Error**. Son errores de la propia máquina virtual de Java.
+-   **Excepciones que NO es necesario gestionar:** Hijas de  **RunTimeException**. Son excepciones muy comunes, por ejemplo  **NullPointerException**,  **ArrayIndexOutOfBoundsException**.
+-   **Excepciones que es necesario gestionar:** Hijas de  **Exception**. Todas las demás, por ejemplo  **IOException**.
+![Diagramas de exepciones en java](https://4.bp.blogspot.com/-KH32JPEWi_s/V4QBF6yaaKI/AAAAAAAABRM/s56Y3mTNKuQ3x3TRjB8P9axzBm8zZoHjgCLcB/s640/Excepciones.png)
+
+**Ejemplo de exepciones**
+```java
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    } finally {
+      System.out.println("The 'try catch' is finished.");
+    }
+  }
+}
+```
+ 
