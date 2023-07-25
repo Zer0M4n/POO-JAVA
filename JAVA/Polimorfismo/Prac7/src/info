@@ -1,0 +1,39 @@
+Elaborar el programa en a partir del programa ejemplo proporcionado en el material de clase, con las siguientes especificaciones:
+* nombre clase abstracta - Figuras
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 1 - Esfera
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 2 - Cubo
+* constructor clase d2 - recibe como parámetro el valor del lado del cubo.
+* método override clase d2 - calcularVolumen( ){ return Math.Pow(lado,3) ; }
+* método override clase d2 - desplegarVolumen( ){ //despliega lado y valor del volumen del cubo }
+* destructor clase d2 - Mensaje "Memoria Liberada Objeto Cubo"
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 3 - Cilindro
+* constructor clase d3 - recibe como parámetros valores de radio y altura del cilindro.
+* método override clase d3 - calcularVolumen( ( ){ return Math.PI * Math.Pow(radio,2) * altura; }
+* método override clase d3-desplegarVolumen( ){//despliega radio, altura y valor del volumen del cilindro }
+* destructor clase d3- Mensaje "Memoria Liberada Objeto Cilindro"
+----------------------------------------------------------------------------------------------------------------------------------------
+* nombre clase derivada 4 - Cono
+* constructor clase d4 - recibe como parámetro valores de radio y altura del cono.
+* método override clase d4 - calcularVolumen( ( ){ return (1/3f)*Math.PI * Math.Pow(radio,2) * altura; }
+* método override clase d4- desplegarVolumen( ){ //despliega radio, altura y valor del volumen del cono }
+* destructor clase d4- Mensaje "Memoria Liberada Objeto Cono"
+----------------------------------------------------------------------------------------------------------------------------------------
+En el Main( ):
+- Declarar variables auxiliares para lado, radio y altura; capturar valores según la figura dada, en orden de la creación de los objetos.
+- Crear objeto de la clase derivada Esfera enviándole como parámetro el valor del radio.
+- Ejecutar métodos calcularVolumen( ) y desplegarVolumen( ) de clase Esfera.
+* detener y limpiar pantalla.
+- Crear objeto de la clase derivada Cubo enviándole como parámetro el valor del lado.
+- Ejecutar métodos calcularVolumen( ) y desplegarVolumen( ) de clase Cubo.
+* detener y limpiar pantalla.
+- Crear objeto de la clase derivada Cilindro enviándole como parámetros radio y altura.
+- Ejecutar métodos calcularVolumen( ) y desplegarVolumen( ) de clase Cilindro.
+* detener y limpiar pantalla.
+- Crear objeto de la clase derivada Cono enviándole como parámetros radio y altura.
+- Ejecutar métodos calcularVolumen( ) y desplegarVolumen( ) de clase Cono.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+* Elaborar también los Diagramas de Clases y Objetos utilizados en la Implementación del program
