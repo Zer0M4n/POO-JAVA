@@ -255,4 +255,63 @@ class Main {
     myDog.animalSound();
   }
 }
+
 ```
+## Clases Abstractas
+**Clases abstractas:** Es una clase especial que no puede crear objetos , se usa como base para otros clase, solo se usa para heredar
+**Métodos abstractos:** Tiene como principal que no tiene cuerpo , solo tiene cuerpo cuando hederemos el método a una clase hija
+**Ejemplos de uso de clases abstractas**
+```java
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+```
+
+## Excepciones
+
+**Que son las exepciones en java?** Las exepciones son formas que java nos da para controlar errores, son muy utiles para errores previstos y imprevistos
+
+**Tipos de exepciones en java:** 
+-   **Excepciones irrecuperables:** Hijas de  **Error**. Son errores de la propia máquina virtual de Java.
+-   **Excepciones que NO es necesario gestionar:** Hijas de  **RunTimeException**. Son excepciones muy comunes, por ejemplo  **NullPointerException**,  **ArrayIndexOutOfBoundsException**.
+-   **Excepciones que es necesario gestionar:** Hijas de  **Exception**. Todas las demás, por ejemplo  **IOException**.
+![Diagramas de exepciones en java](https://4.bp.blogspot.com/-KH32JPEWi_s/V4QBF6yaaKI/AAAAAAAABRM/s56Y3mTNKuQ3x3TRjB8P9axzBm8zZoHjgCLcB/s640/Excepciones.png)
+
+**Ejemplo de exepciones**
+```java
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    } finally {
+      System.out.println("The 'try catch' is finished.");
+    }
+  }
+}
+```
+ 
