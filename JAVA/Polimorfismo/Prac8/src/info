@@ -1,0 +1,20 @@
+b) Defina una interfaz llamada Perímetros, la cual contenga un método llamado CalcularPerimetro y otro
+llamado DesplegarPerimetro, los cuales sean implementados para las clases derivadas Rombo, Romboide y
+PoligonoRegular.
+1.- La clase Rombo tendrá el campo Lado, el cual recibirá a través de su constructor, calculara su perímetro en
+el método CalcularPerimetro con la fórmula perímetro = 4 * Lado; y desplegará el resultado que recibirá como
+parámetro en su método DesplegarPerimetro, ademas del valor de su lado. También tendrá un Destructor que
+nos mostrará el mensaje adecuado cuando se libere la memoria del objeto.
+2.- La clase Romboide tendrá los campos Base y Altura, los cuales recibirá a través de su constructor, calculara
+su perímetro en el método CalcularPerimetro con la fórmula perímetro = (2*Base) + (2*Altura); y desplegará el
+resultado que recibirá como parámetro en su método DesplegarPerimetro, ademas del valor de sus campos.
+También tendrá un Destructor que nos mostrará el mensaje adecuado cuando se libere la memoria del objeto.
+3.- La clase PoligonoRegular tendrá los campos Lado y NumeroLados, los cuales recibirá a través de su
+constructor, calculara su perímetro en el método CalcularPerimetro con la fórmula perímetro = Lado *
+NumeroLados; y desplegará el resultado que recibirá como parámetro en su método DesplegarPerimetro,
+ademas del valor de sus campos. También tendrá un Destructor que nos mostrará el mensaje adecuado cuando
+se libere la memoria del objeto.
+e) En el Main: declarar las variables auxiliares necesarias, capturar los datos para ser enviados a los
+constructores al ser creado cada objeto, instanciar un objeto para cada clase y ejecutar los métodos
+CalcularPerimetro y DesplegarPerimetro de cada clase correctamente, para visualizar los resultados obtenidos.
+f) Utilizar el siguiente menú de opciones para los 3 casos de polimorfismo:
