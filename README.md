@@ -6,8 +6,10 @@
 Es una de las paradigmas de programación , este tiene el fin de facilitar  programación  usando clases y objetos ( y otros conceptos que veré luego)
 
 # Clases y objetos
+
 **Que es una clase ?** 
 Una clase nos funciona como plantilla que usaremos para facilitarnos  la vida, Dentro de la clase se va definir las características de la identidad y sus atributos.
+
 **Que es un objeto?**
 Un objeto seria una representación de algo
 
@@ -116,9 +118,12 @@ public class Main {
 
 
 # *Metodos Getter y Setter*
+
 Loa métodos ***Getter*** y ***Setter*** Son métodos que permiten el acceso a los atributos de una clase , que están encapsulados de manera privada
+
 **Metodo Getter**
 El metodo get("Obtener"): accede a la clase para retornarnos  el valor por lo cual la estructura de este metodo debe contener el tipo de valor que vamos a retornar el con ese metodo
+
 **Metodo Setter**
 El metodo set("Establecer") nos sirve para asignar un valor a un atributo de nuestra la clase , esto se hace de manera directa con este metodo, como este metodo no retorna nada debe contener la palabra void en su estructura y siempre debe recibir un parametro de entrada
 ## Tipos de modificadores de acceso?
@@ -259,6 +264,7 @@ class Main {
 ```
 ## Clases Abstractas
 **Clases abstractas:** Es una clase especial que no puede crear objetos , se usa como base para otros clase, solo se usa para heredar
+
 **Métodos abstractos:** Tiene como principal que no tiene cuerpo , solo tiene cuerpo cuando hederemos el método a una clase hija
 **Ejemplos de uso de clases abstractas**
 ```java
@@ -288,6 +294,16 @@ class Main {
   }
 }
 ```
+## Interfaces 
+**Que es?** Una interfaz es una "clase abstracta" completamente que se utiliza para agrupar métodos relacionados con cuerpos vacíos:
+**Ejemplo**
+```java
+// interface
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void run(); // interface method (does not have a body)
+}
+```
 
 ## Excepciones
 
@@ -295,7 +311,9 @@ class Main {
 
 **Tipos de exepciones en java:** 
 -   **Excepciones irrecuperables:** Hijas de  **Error**. Son errores de la propia máquina virtual de Java.
--   **Excepciones que NO es necesario gestionar:** Hijas de  **RunTimeException**. Son excepciones muy comunes, por ejemplo  **NullPointerException**,  **ArrayIndexOutOfBoundsException**.
+-   **Excepciones que NO es necesario gestionar:** Hijas de  **RunTimeException**. Son excepciones muy comunes, por ejemplo  **NullPointerException**,
+-
+**ArrayIndexOutOfBoundsException**.
 -   **Excepciones que es necesario gestionar:** Hijas de  **Exception**. Todas las demás, por ejemplo  **IOException**.
 ![Diagramas de exepciones en java](https://4.bp.blogspot.com/-KH32JPEWi_s/V4QBF6yaaKI/AAAAAAAABRM/s56Y3mTNKuQ3x3TRjB8P9axzBm8zZoHjgCLcB/s640/Excepciones.png)
 
