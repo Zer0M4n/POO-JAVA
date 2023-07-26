@@ -14,6 +14,6 @@ public class Romboide extends Datos  implements Perimetros{
 
     @Override
     public void Desplegar_Resultado() {
-
+        System.out.println("Perimetro: " + Calcular_Poligono());
     }
 }
